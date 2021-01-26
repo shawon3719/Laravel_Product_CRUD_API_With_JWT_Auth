@@ -41,6 +41,23 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card card-body m-2">
+                            <div class="row">
+                                <div class="col-5">
+                                    <h4>Product Module</h4>
+                                </div>
+                                <div class="col-7">
+                                    <ul class="feature-list">
+                                        <li>Product List</li>
+                                        <li>Product List [Public]</li>
+                                        <li>Create Product</li>
+                                        <li>Edit Product</li>
+                                        <li>View Product</li>
+                                        <li>Delete Product</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <p class="text-center">
                             <a href="https://github.com/shawon3719" target="_blank" class="btn btn-info">
                                 <i class="fab fa-github"></i> Masudul Hasan Shawon

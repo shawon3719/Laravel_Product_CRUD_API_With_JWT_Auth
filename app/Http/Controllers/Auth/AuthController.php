@@ -65,27 +65,6 @@ class AuthController extends Controller
     }
 
     /**
-     * @OA\GET(
-     *     path="/api/auth/me",
-     *     tags={"Authentication"},
-     *     summary="Authenticated User Profile",
-     *     description="Authenticated User Profile",
-     *     @OA\Response(response=200, description="Authenticated User Profile" ),
-     *     @OA\Response(response=400, description="Bad request"),
-     *     @OA\Response(response=404, description="Resource Not Found"),
-     * )
-     */
-    public function me()
-    {
-        try {
-            $data = $this->guard()->user();
-            return $this->responseRepository->ResponseSuccess($data, 'Profile Fetched Successfully !');
-        } catch (\Exception $e) {
-            return $this->responseRepository->ResponseError(null, $e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR);
-        }
-    }
-
-    /**
      * @OA\POST(
      *     path="/api/auth/logout",
      *     tags={"Authentication"},
